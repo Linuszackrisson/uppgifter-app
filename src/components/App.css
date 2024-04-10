@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
 
 body {
     font-family: poppins, sans-serif;
@@ -55,7 +55,8 @@ body {
     height: 25%; /* Använd procent relativt förälderelementets höjd */
     border-radius: 50%;
     background-color: #FF5631;
-    font-size: 42px;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
