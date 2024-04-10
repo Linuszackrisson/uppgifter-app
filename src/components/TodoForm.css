@@ -1,0 +1,46 @@
+input {
+    background-color: #1E1E1E;
+    width: 80%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 18px;
+    padding: 16px;
+    height: 30px;
+    color: white;
+    
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+
+ form {
+    padding: 0.5rem;
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+form button {
+    background-color: #FF5631;
+    text-align: center;
+    height: 62px;
+    width: 62px;
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

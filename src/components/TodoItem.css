@@ -1,0 +1,98 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/trash.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pen.css');
+
+.todo-item-container {
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    border-color: #D1C1A6;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .todo-item-left {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    
+  }
+  
+  .todo-item-checkbox {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #FF5631;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .todo-item-checkbox.checked {
+    border-color: #57CB4C;
+  }
+  
+  .todo-item-checkbox::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
+    
+  }
+  
+  .todo-item-checkbox.checked::before {
+    background-color: #57CB4C;
+  }
+  
+  .todo-item-text {
+    color: #D1C1A6;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 1rem;
+    margin-left: 0.6rem;
+
+
+  }
+  .todo-item-text:focus {
+    outline: none; /* Tar bort ramen när inputfältet är markerat */
+  }
+  
+ 
+  
+  
+  .todo-item-buttons {
+    margin-left: auto;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .todo-item-buttons button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  i {
+    color: #D1C1A6;
+
+    
+    
+    
+  }
+  
+  .todo-item-buttons button.save-button {
+    color: #D1C1A6;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+  }
