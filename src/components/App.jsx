@@ -1,16 +1,19 @@
-// App.js
-
 import React, { useState, useEffect } from 'react';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 import './App.css';
 
 const App = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const storedTodos = JSON.parse(localStorage.getItem('todos'));
+    return storedTodos || [];
+  });
 
   useEffect(() => {
-    const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
-    setTodos(savedTodos);
+    const storedTodos = JSON.parse(localStorage.getItem('todos'));
+    if (storedTodos) {
+      setTodos(storedTodos);
+    }
   }, []);
 
   useEffect(() => {
@@ -52,8 +55,8 @@ const App = () => {
     <div className="app">
       <header className="header">
         <div className="header-title">
-        <h1>Uppgifter</h1>
-        <h2>snart helg</h2>
+          <h1>Uppgifter</h1>
+          <h2>snart helg</h2>
         </div>
         
         <div className="circle">{completedCount}/{totalCount}</div>
