@@ -103,4 +103,19 @@ body {
     text-decoration: line-through;
   }
   
-  
+  @media (max-width: 570px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .circle {
+      margin-bottom: 2rem;
+    }
+
+    .app {
+      padding: 1.5rem;
+    }
+}

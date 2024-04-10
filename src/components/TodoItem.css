@@ -1,24 +1,18 @@
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/trash.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pen.css');
-
 .todo-item-container {
-    color: white;
+    color: whitesmoke;
     padding: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; 
     display: flex;
     align-items: center;
     border: 2px solid;
     border-color: #D1C1A6;
     border-radius: 20px;
-    margin-bottom: 1rem;
-    
   }
   
   .todo-item-left {
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    
   }
   
   .todo-item-checkbox {
@@ -30,7 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition: transform 0.2s ease; 
+  }
+  
+  .todo-item-checkbox:hover {
+    transform: scale(1.1); 
   }
   
   .todo-item-checkbox.checked {
@@ -43,7 +41,6 @@
     height: 16px;
     border-radius: 50%;
     background-color: black;
-    
   }
   
   .todo-item-checkbox.checked::before {
@@ -56,22 +53,17 @@
     font-weight: 700;
     padding-left: 1rem;
     margin-left: 0.6rem;
-
-
   }
+  
   .todo-item-text:focus {
-    outline: none; /* Tar bort ramen när inputfältet är markerat */
+    outline: none; 
   }
-  
- 
-  
   
   .todo-item-buttons {
     margin-left: auto;
     padding-right: 1rem;
     display: flex;
     align-items: center;
-    
   }
   
   .todo-item-buttons button {
@@ -80,14 +72,16 @@
     color: white;
     cursor: pointer;
     margin-left: 0.5rem;
+    transition: transform 0.2s ease; 
   }
   
-  i {
+  .todo-item-buttons button:hover {
+    transform: scale(1.1); 
+  }
+  
+  button i {
     color: #D1C1A6;
-
-    
-    
-    
+    font-size: 20px;
   }
   
   .todo-item-buttons button.save-button {
@@ -96,3 +90,4 @@
     text-decoration: none;
     font-weight: 700;
   }
+  

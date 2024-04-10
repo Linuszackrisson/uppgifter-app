@@ -31,8 +31,8 @@ const TodoItem = ({ todo, toggleTodo, deleteTodo, editTodo }) => {
         )}
       </div>
       <div className="todo-item-buttons">
-        <button onClick={() => setIsEditing(!isEditing)}><i className="gg-pen"></i></button>
-        <button onClick={() => deleteTodo(todo.id)}><i className="gg-trash"></i></button>
+        <button onClick={() => setIsEditing(!isEditing)}><i className="fas fa-pen"></i></button>
+        <button onClick={() => deleteTodo(todo.id)}><i className="fas fa-trash-alt"></i></button>
         {isEditing && <button className="save-button" onClick={handleEdit}>Spara</button>}
       </div>
     </div>

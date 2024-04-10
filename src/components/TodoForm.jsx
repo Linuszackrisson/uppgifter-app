@@ -19,7 +19,8 @@ const TodoForm = ({ addTodo }) => {
         onChange={(e) => setText(e.target.value)}
         placeholder="Lägg till uppgift"
       />
-      <button type="submit">+</button>
+      <button type="submit"><i class="fa fa-plus"></i></button>
+
     </form>
   );
 };
