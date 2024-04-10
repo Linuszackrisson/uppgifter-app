@@ -1,8 +1,12 @@
-# React + Vite
+# Uppgifter-App/Todo-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funktioner
 
-Currently, two official plugins are available:
+- Lägg till, ta bort och redigera uppgifter enkelt.
+- Markera avklarade uppgifter för att hålla koll.
+- Uppdaterar antal avklarade uppgifter och uppgifter kvar automatiskt.
+- Enkel och minimalistisk design för bästa användarupplevelse.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Om Uppgifter-App
+
+Uppgifter-App är en enkel Todo-applikation som jag skapade för att lära mig React. Där jag utöver funktionalitet lade mycket fokus på UI/UX.
