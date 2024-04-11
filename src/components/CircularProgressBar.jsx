@@ -15,7 +15,7 @@ const CircularProgressBar = ({ progress }) => {
       viewBox={`0 0 ${radius * 2} ${radius * 2}`}
     >
       <circle
-        stroke="#E4E7EB"
+        stroke="#1E1E1E"
         fill="transparent"
         strokeWidth={strokeWidth}
         r={normalizedRadius}
