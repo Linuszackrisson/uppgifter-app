@@ -56,3 +56,21 @@ button[type="submit"] .fa.fa-plus {
     color: black;
     font-size: 24px;
 }
+
+@media screen and (max-width: 600px) {
+    input {
+        width: 70%; /* Ändra bredden till 70% när skärmbredden är under 600px */
+    }
+
+    form {
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input {
+        width: 66%; /* Ändra bredden till 70% när skärmbredden är under 600px */
+    }
+
+    
+}
