@@ -14,6 +14,12 @@ const TodoItem = ({ todo, toggleTodo, deleteTodo, editTodo }) => {
     setIsEditing(false);
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleEdit();
+    }
+  };
+
   return (
     <div className="todo-item-container" style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
       <div className="todo-item-left">
@@ -23,6 +29,7 @@ const TodoItem = ({ todo, toggleTodo, deleteTodo, editTodo }) => {
             type="text" 
             value={editableText} 
             onChange={(e) => setEditableText(e.target.value)} 
+            onKeyPress={handleKeyPress} 
             autoFocus
             className="todo-item-text"
           />

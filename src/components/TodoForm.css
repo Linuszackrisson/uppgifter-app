@@ -59,7 +59,7 @@ button[type="submit"] .fa.fa-plus {
 
 @media screen and (max-width: 600px) {
     input {
-        width: 70%; /* Ändra bredden till 70% när skärmbredden är under 600px */
+        width: 70%; 
     }
 
     form {
@@ -69,7 +69,7 @@ button[type="submit"] .fa.fa-plus {
 
 @media screen and (max-width: 400px) {
     input {
-        width: 66%; /* Ändra bredden till 70% när skärmbredden är under 600px */
+        width: 66%; 
     }
 
     
