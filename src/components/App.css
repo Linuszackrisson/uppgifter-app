@@ -119,4 +119,8 @@ body {
     .app {
       padding: 1.5rem;
     }
+
+    header h1 {
+      margin-top: 0.4rem;
+    }
 }

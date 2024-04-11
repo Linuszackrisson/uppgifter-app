@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import CircularProgressBar from './CircularProgressBar';
 import './App.css';
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
 
   const completedCount = todos.filter(todo => todo.completed).length;
   const totalCount = todos.length;
+  const progress = (completedCount / totalCount) * 100;
 
   return (
     <div className="app">
@@ -59,7 +61,7 @@ const App = () => {
           <h2>snart helg</h2>
         </div>
         
-        <div className="circle">{completedCount}/{totalCount}</div>
+        <CircularProgressBar progress={progress} />
       </header>
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} editTodo={editTodo} />
